@@ -61,7 +61,7 @@
 				<version>2.2.1</version>
 				<configuration>
 					<deploymentType>standalone</deploymentType>
-					<!-- <muleHome>/Users/bennet/prod-mule-standalone-3.8.1/</muleHome> -->
+					<muleHome>/Users/bennet/prod-mule-standalone-3.8.1/</muleHome>
 					<community>true</community>
 				</configuration>
 				<executions>
