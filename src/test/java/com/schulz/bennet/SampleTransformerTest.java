@@ -14,8 +14,10 @@ public class SampleTransformerTest {
 		try {
 			transformer.doTransform(null, null);
 			fail();
-		} catch (TransformerException e) {
+		} catch (IllegalArgumentException e) {
 			Assert.assertEquals("payload is null!", e.getMessage());
+		} catch (TransformerException e) {
+			fail();
 		}
 	}
 }
