@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 node {
    def mvnHome = tool 'apache-maven-3.5.0'
    //def mvnHome = tool 'M3'
