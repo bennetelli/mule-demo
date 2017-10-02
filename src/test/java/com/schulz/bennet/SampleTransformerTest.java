@@ -20,4 +20,11 @@ public class SampleTransformerTest {
 			fail();
 		}
 	}
+	
+	@Test
+	public void shouldReturnSamePayload() throws TransformerException {
+		SampleTransformer transformer = new SampleTransformer();
+		String payload = (String) transformer.doTransform("lala", null);
+		Assert.assertEquals("lala", payload);
+	}
 }
