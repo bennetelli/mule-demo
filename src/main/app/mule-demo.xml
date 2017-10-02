@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="mule-demoFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <logger message="#['hi']" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
