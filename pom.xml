@@ -67,9 +67,16 @@
 				<executions>
 					<execution>
 						<id>deploy</id>
-						<phase>deploy</phase>
+						<phase>pre-integration-test</phase>
 						<goals>
 							<goal>deploy</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>undeploy</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>undeploy</goal>
 						</goals>
 					</execution>
 				</executions>
